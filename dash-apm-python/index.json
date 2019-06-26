@@ -5,14 +5,17 @@
     "steps": [],
     "intro": {
       "text": "intro.md",
-      "courseData": "background.sh"
+      "courseData": "background.sh",
+      "code": "foreground.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/tracing-workshop",
+    "showdashboard": true
   },
   "backend": {
     "imageid": "docker"
