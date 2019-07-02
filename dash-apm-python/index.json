@@ -15,7 +15,13 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/tracing-workshop",
-    "showdashboard": true
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Frontend",
+        "port": 5000
+      }
+    ]
   },
   "backend": {
     "imageid": "ubuntu"
