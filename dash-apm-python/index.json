@@ -15,9 +15,10 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/tracing-workshop",
+    "showvisualise": true,
     "showdashboard": true
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "ubuntu"
   }
 }
