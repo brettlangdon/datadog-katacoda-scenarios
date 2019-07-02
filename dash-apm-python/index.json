@@ -15,9 +15,6 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/tracing-workshop",
-    "showvisualise": true,
-    "scope": "docker run --name=scope -d --net=host --pid=host --privileged -v /var/run/docker.sock:/var/run/docker.sock:rw weaveworks/scope:1.11.2 --probe.docker=true",
-    "scopePort": 4040,
     "showdashboard": true
   },
   "backend": {
