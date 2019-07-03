@@ -1,6 +1,8 @@
 To start all the services run the following, replacing `<KEY>` with your Datadog API key:
 
-`DD_API_KEY=<KEY> docker-compose up`{{copy}}
+`export DD_API_KEY=<KEY>`{{copy}}
+
+`docker-compose up`{{execute}}
 
 Open the web interface to verify the application is up and running:
 

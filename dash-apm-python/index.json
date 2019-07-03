@@ -10,6 +10,10 @@
       {
         "title": "Get traces flowing",
         "text": "step_2.md"
+      },
+      {
+        "title": "Enable trace analytics",
+        "text": "step_3.md"
       }
     ],
     "intro": {
