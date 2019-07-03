@@ -2,6 +2,11 @@
 
 Add the following environment variables to the `agent` service in `docker-compose.yml`.
 
+```
+multiline
+copy
+```{{copy}}
+
 `DD_LOGS_ENABLED=true`{{copy}}
 `DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true`{{copy}}
 
