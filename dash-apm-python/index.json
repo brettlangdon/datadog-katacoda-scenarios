@@ -45,11 +45,8 @@
     ],
     "terminals": [
       {
-        "name": "Terminal 1",
-        "target": "term1"
-      },
-      {
         "name": "Terminal 2",
+        "command": "/bin/bash",
         "target": "term2"
       }
     ]
