@@ -42,6 +42,16 @@
         "name": "Frontend",
         "port": 5000
       }
+    ],
+    "terminals": [
+      {
+        "name": "Terminal 1",
+        "target": "term1"
+      },
+      {
+        "name": "Terminal 2",
+        "target": "term2"
+      }
     ]
   },
   "backend": {
