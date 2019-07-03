@@ -6,5 +6,3 @@ To get started please be sure you have:
 - Datadog account login
 - Datadog API key
 
-
-[Datadog APM Dashboard](https://app.datadoghq.com/apm)
