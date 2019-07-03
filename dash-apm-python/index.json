@@ -42,13 +42,6 @@
         "name": "Frontend",
         "port": 5000
       }
-    ],
-    "terminals": [
-      {
-        "name": "Terminal 2",
-        "command": "/bin/bash",
-        "target": "term2"
-      }
     ]
   },
   "backend": {
