@@ -10,7 +10,7 @@ Next, run the following command to start our docker services:
 
 Next, open the web interface to verify the application is up and running:
 
-https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com
+http://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com
 
 
 Finally, open APM trace list to ensure traces are being submitted successfully:

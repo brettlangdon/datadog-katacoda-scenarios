@@ -47,6 +47,8 @@
   "backend": {
     "imageid": "ubuntu",
     "reuseConnection": true,
-    "livetime": "3h"
+    "livetime": "3h",
+    "environmentsprotocol": "http",
+    "port": 5000
   }
 }
