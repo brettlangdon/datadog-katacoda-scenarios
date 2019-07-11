@@ -2,7 +2,7 @@ We can attach our own custom application metadata to spans.
 
 Open `frontend/frontend/api.py` file.
 
-Add the following code after the `app = Flask('api')` on line 16.
+Add the following code after the `app = Flask('api')`.
 
 ``` python
 @app.before_request
