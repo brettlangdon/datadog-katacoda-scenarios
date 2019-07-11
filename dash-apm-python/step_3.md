@@ -1,7 +1,7 @@
 Add the following environment variable to the `frontend`, `node`, `pumps`,
 and `sensors` services in `docker-compose.yml`.
 
-`DD_ANALYTICS_ENABLED=true`{{copy}}
+`DD_TRACE_ANALYTICS_ENABLED=true`{{copy}}
 
 Our services should look like:
 
