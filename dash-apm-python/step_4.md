@@ -1,44 +1,22 @@
-# Enable Datadog logs agent
+We can attach our own custom application metadata to spans.
 
-Add the following environment variables to the `agent` service in `docker-compose.yml`.
+Open `frontend/frontend/api.py` file.
 
-`DD_LOGS_ENABLED=true`{{copy}}
-`DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true`{{copy}}
+Add the following code after the `app = Flask('api')` on line 16.
 
-Our service should look like:
+``` python
+@app.before_request
+def add_user_id():
+    # Get the current user's id
+    user_id = get_user_id()
 
-```yaml
-agent:
-  environment:
-    - DD_API_KEY
-    - DD_APM_ENABLED=true
-    - DD_TAGS='env:apm-workshop'
-    - DD_LOGS_ENABLED=true
-    - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
-```
+    # Get the current root span (the `flask.request` span)
+    span = tracer.current_root_span()
+    span.set_tag('user_id', user_id)
+```{{copy}}
 
-# Enable trace id injection into logs
+Restart services `docker-compose up`{{execute interrupt}}
 
-Add the following environment variable to the `frontend`, `node`, `pumps`,
-and `sensors` services in `docker-compose.yml`.
+Finally, open the service page for `frontend` to view the new metadata on traces.
 
-`DD_LOGS_INTEGRATION=true`{{copy}}
-
-Our services should look like:
-
-```yaml
-frontend:
-    environment:
-      - DATADOG_SERVICE_NAME=frontend
-      - DATADOG_TRACE_AGENT_HOSTNAME=agent
-      - DD_ANALYTICS_ENABLED=true
-      - DD_LOGS_INTEGRATION=true
-```
-
-Afterwards restart docker services:
-
-`docker-compose up`{{execute interrupt}}
-
-Finally, open logs dashboard:
-
-https://app.datadoghq.com/logs
+https://app.datadoghq.com/apm/resource/frontend/flask.request/

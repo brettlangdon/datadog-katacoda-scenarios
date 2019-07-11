@@ -16,12 +16,28 @@
         "text": "step_3.md"
       },
       {
-        "title": "Enable trace and logs",
+        "title": "Adding custom metadata",
         "text": "step_4.md"
       },
       {
-        "title": "Enable process agent",
+        "title": "Introducing errors",
         "text": "step_5.md"
+      },
+      {
+        "title": "Introducing latencies",
+        "text": "step_6.md"
+      },
+      {
+        "title": "Adding manual spans",
+        "text": "step_7.md"
+      },
+      {
+        "title": "Enable trace and logs",
+        "text": "step_8.md"
+      },
+      {
+        "title": "Enable process agent",
+        "text": "step_9.md"
       }
     ],
     "intro": {
