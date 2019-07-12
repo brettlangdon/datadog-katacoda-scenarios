@@ -19,4 +19,4 @@ Restart services `docker-compose up`{{execute interrupt}}
 
 Finally, open the service page for `frontend` to view the new metadata on traces.
 
-https://app.datadoghq.com/apm/service/frontend/flask.request
+https://app.datadoghq.com/apm/service/frontend

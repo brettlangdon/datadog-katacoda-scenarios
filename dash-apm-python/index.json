@@ -36,8 +36,12 @@
         "text": "step_8.md"
       },
       {
-        "title": "Enable process agent",
+        "title": "Enabling monitors",
         "text": "step_9.md"
+      },
+      {
+        "title": "Setup custom dashboard",
+        "text": "step_10.md"
       }
     ],
     "intro": {

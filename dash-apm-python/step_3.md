@@ -10,7 +10,7 @@ frontend:
     environment:
       - DATADOG_SERVICE_NAME=frontend
       - DATADOG_TRACE_AGENT_HOSTNAME=agent
-      - DD_ANALYTICS_ENABLED=true
+      - DD_TRACE_ANALYTICS_ENABLED=true
 ```
 
 Afterwards restart docker services:
