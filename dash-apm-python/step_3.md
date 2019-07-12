@@ -15,7 +15,7 @@ frontend:
 
 Afterwards restart docker services:
 
-`docker-compose up`{{execute interrupt}}
+`restart-services`{{execute interrupt}}
 
 
 Finally, open trace analytics dashboard:

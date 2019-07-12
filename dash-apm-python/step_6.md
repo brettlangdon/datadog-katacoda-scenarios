@@ -23,7 +23,7 @@ def simulate_all_sensors():
     return [s.serialize() for s in sensors]
 ```{{copy}}
 
-Restart our services `docker-compose up`{{execute interrupt}}
+`restart-services`{{execute interrupt}}
 
 Open the service page for our `frontend` service.
 

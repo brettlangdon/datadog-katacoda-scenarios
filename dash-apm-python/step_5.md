@@ -22,7 +22,7 @@ def simulate_sensors():
     return jsonify(sensors)
 ```{{copy}}
 
-Restart our services `docker-compose up`{{execute interrupt}}.
+`restart-services`{{execute interrupt}}.
 
 Open the `/simulate_sensors` resource page for our `frontend` service.
 

@@ -5,7 +5,7 @@ Copy the following command and replace `<KEY>` with your API key and execute:
 
 Next, run the following command to start our docker services:
 
-`docker-compose up`{{execute}}
+`start-services`{{execute}}
 
 
 Next, open the web interface to verify the application is up and running:

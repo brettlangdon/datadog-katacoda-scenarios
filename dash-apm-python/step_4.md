@@ -15,7 +15,7 @@ def add_user_id():
     span.set_tag('user_id', user_id)
 ```{{copy}}
 
-Restart services `docker-compose up`{{execute interrupt}}
+`restart-services`{{execute interrupt}}
 
 Finally, open the service page for `frontend` to view the new metadata on traces.
 
