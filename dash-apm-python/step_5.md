@@ -1,21 +1,17 @@
 # Enable Datadog logs agent
 
-Add the following environment variables to the `agent` service in `docker-compose.yml`.
+To enable logs collection we need to enable the logs agent in the Datadog agent.
 
-`DD_LOGS_ENABLED=true`{{copy}}
-`DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true`{{copy}}
+To do so you can set the following environment variables:
 
-Our service should look like:
+```
+DD_LOGS_ENABLED=true
+DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
+```
 
-```yaml
-agent:
-  environment:
-    - DD_API_KEY
-    - DD_APM_ENABLED=true
-    - DD_TAGS='env:apm-workshop'
-    - DD_LOGS_ENABLED=true
-    - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
-```{{copy}}
+We have set these environment variables for you automatically.
+
+These settings enable the logs agent and tells it to collect logs from all docker containers it finds.
 
 # Enable trace id injection into logs
 
