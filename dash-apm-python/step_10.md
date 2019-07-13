@@ -1,5 +1,7 @@
-Before continuing to the next step please be sure to restart the `pumps` service.
+In this phase we are going to introduce a service failure.
 
-`docker-compose start pumps`.
+Open a new terminal window and run:
 
-You may close the new terminal window you have opened in the previous step.
+`docker-compose stop pumps`
+
+to cause the `pumps` service to stop.

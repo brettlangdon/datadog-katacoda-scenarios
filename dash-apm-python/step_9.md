@@ -1,7 +1,5 @@
-In this phase we are going to introduce a service failure.
+We are going to show how we can enable monitors for our APM services.
 
-Open a new terminal window and run:
+Open the frontend service page to continue.
 
-`docker-compose stop pumps`
-
-to cause the `pumps` service to stop.
+https://app.datadoghq.com/apm/service/frontend
