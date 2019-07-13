@@ -21,11 +21,13 @@
       },
       {
         "title": "Introducing errors",
-        "text": "step_5.md"
+        "text": "step_5.md",
+        "courseData": "step_5_background.sh"
       },
       {
         "title": "Introducing latencies",
-        "text": "step_6.md"
+        "text": "step_6.md",
+        "courseData": "step_6_background.sh"
       },
       {
         "title": "Enable trace and logs",
@@ -42,6 +44,14 @@
       {
         "title": "Setup custom dashboard",
         "text": "step_10.md"
+      },
+      {
+        "title": "Introducing failures",
+        "text": "step_11.md"
+      },
+      {
+        "title": "Restart stopped service",
+        "text": "step_12.md"
       }
     ],
     "intro": {
