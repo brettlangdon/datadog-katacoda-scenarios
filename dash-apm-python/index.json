@@ -23,7 +23,7 @@
       {
         "title": "Enable trace and logs",
         "text": "step_5.md",
-        "text": "step_5_background.md"
+        "courseData": "step_5_background.md"
       },
       {
         "title": "Introducing errors",
