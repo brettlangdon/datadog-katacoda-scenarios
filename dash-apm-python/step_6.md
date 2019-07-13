@@ -3,6 +3,6 @@ to see how we can track it down.
 
 `restart-services`{{execute interrupt}} to continue.
 
-Open the `frontend` service page to continue.
+Then, open the `frontend` service page.
 
 https://app.datadoghq.com/apm/service/frontend
