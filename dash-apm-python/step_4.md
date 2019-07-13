@@ -12,7 +12,7 @@ def add_customer_id():
 
     # Get the current root span (the `flask.request` span)
     span = tracer.current_root_span()
-    span.set_tag(customer_id', customer_id)
+    span.set_tag('customer_id', customer_id)
 ```{{copy}}
 
 `restart-services`{{execute interrupt}}
