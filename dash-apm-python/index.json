@@ -21,22 +21,22 @@
         "text": "step_4.md"
       },
       {
-        "title": "Introducing errors",
-        "text": "step_5.md",
-        "courseData": "step_5_background.sh"
+        "title": "Enable trace and logs",
+        "text": "step_5.md"
       },
       {
-        "title": "Introducing latencies",
+        "title": "Introducing errors",
         "text": "step_6.md",
         "courseData": "step_6_background.sh"
       },
       {
-        "title": "Enable trace and logs",
+        "title": "Adding manual spans",
         "text": "step_7.md"
       },
       {
-        "title": "Adding manual spans",
-        "text": "step_8.md"
+        "title": "Introducing latencies",
+        "text": "step_8.md",
+        "courseData": "step_8_background.sh"
       },
       {
         "title": "Enabling monitors",
