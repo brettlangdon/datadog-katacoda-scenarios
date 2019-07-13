@@ -45,16 +45,12 @@
         "text": "step_9.md"
       },
       {
-        "title": "Setup custom dashboard",
+        "title": "Introducing failures",
         "text": "step_10.md"
       },
       {
-        "title": "Introducing failures",
-        "text": "step_11.md"
-      },
-      {
         "title": "Restart stopped service",
-        "text": "step_12.md"
+        "text": "step_11.md"
       }
     ],
     "intro": {
