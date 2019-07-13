@@ -5,7 +5,7 @@ and `sensors` services in `docker-compose.yml`.
 
 Our services should look like:
 
-``` yaml
+```yaml
 frontend:
   env_file: ".env"
   environment:
@@ -23,9 +23,9 @@ node:
     - DD_SERVICE_NAME=users-api
     - DD_TRACE_AGENT_HOSTNAME=agent
     - DD_TRACE_ANALYTICS_ENABLED=true
-`{{copy}}
+```{{copy}}
 
-``` yaml
+```yaml
 pumps:
   env_file: ".env"
   environment:
@@ -36,9 +36,9 @@ pumps:
     - DATADOG_SERVICE_NAME=pumps-service
     - DATADOG_TRACE_AGENT_HOSTNAME=agent
     - DD_TRACE_ANALYTICS_ENABLED=true
-`{{copy}}
+```{{copy}}
 
-``` yaml
+```yaml
 sensors:
   env_file: ".env"
   environment:
@@ -49,7 +49,7 @@ sensors:
     - DATADOG_SERVICE_NAME=sensors-api
     - DATADOG_TRACE_AGENT_HOSTNAME=agent
     - DD_TRACE_ANALYTICS_ENABLED=true
-`{{copy}}
+```{{copy}}
 
 
 Afterwards restart docker services:
