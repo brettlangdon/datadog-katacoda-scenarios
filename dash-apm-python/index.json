@@ -71,6 +71,10 @@
       {
         "name": "Frontend",
         "port": 5000
+      },
+      {
+        "name": "Datadog APM",
+        "href": "https://app.datadoghq.com/apm"
       }
     ]
   },
