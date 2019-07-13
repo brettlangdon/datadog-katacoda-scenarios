@@ -15,7 +15,7 @@ agent:
     - DD_TAGS='env:apm-workshop'
     - DD_LOGS_ENABLED=true
     - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
-```
+```{{copy}}
 
 # Enable trace id injection into logs
 
@@ -28,12 +28,52 @@ Our services should look like:
 
 ```yaml
 frontend:
+    env_file: ".env"
     environment:
       - DATADOG_SERVICE_NAME=frontend
       - DATADOG_TRACE_AGENT_HOSTNAME=agent
       - DD_ANALYTICS_ENABLED=true
       - DD_LOGS_INTEGRATION=true
-```
+```{{copy}}
+
+``` yaml
+node:
+    env_file: ".env"
+    environment:
+      - DD_SERVICE_NAME=users-api
+      - DD_TRACE_AGENT_HOSTNAME=agent
+      - DD_ANALYTICS_ENABLED=true
+      - DD_LOGS_INTEGRATION=true
+```{{copy}}
+
+``` yaml
+pumps:
+  env_file: ".env"
+  environment:
+    - FLASK_APP=pumps.py
+    - FLASK_DEBUG=1
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_USER=postgres
+    - DATADOG_SERVICE_NAME=pumps-service
+    - DATADOG_TRACE_AGENT_HOSTNAME=agent
+    - DD_ANALYTICS_ENABLED=true
+    - DD_LOGS_INTEGRATION=true
+```{{copy}}
+
+``` yaml
+sensors:
+  env_file: ".env"
+  environment:
+    - FLASK_APP=sensors.py
+    - FLASK_DEBUG=1
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_USER=postgres
+    - DATADOG_SERVICE_NAME=sensors-api
+    - DATADOG_TRACE_AGENT_HOSTNAME=agent
+    - DD_ANALYTICS_ENABLED=true
+    - DD_LOGS_INTEGRATION=true
+```{{copy}}
+
 
 Afterwards restart docker services:
 
