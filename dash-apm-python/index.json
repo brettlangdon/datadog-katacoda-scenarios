@@ -13,7 +13,8 @@
       },
       {
         "title": "Enable trace analytics",
-        "text": "step_3.md"
+        "text": "step_3.md",
+        "courseData": "step_3_background.sh"
       },
       {
         "title": "Adding custom metadata",

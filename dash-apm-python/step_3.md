@@ -1,61 +1,13 @@
-Add the following environment variable to the `frontend`, `node`, `pumps`,
-and `sensors` services in `docker-compose.yml`.
+We are going to enable trace search and analytics feature
+which is not enabled by default OOTB for Datadog APM.
 
-`DD_TRACE_ANALYTICS_ENABLED=true`{{copy}}
+To enable you can set the environment variable `DD_TRACE_ANALYTICS_ENABLED=true`.
 
-Our services should look like:
+We have taken care of this step for you by adding it to the `.env` file.
 
-```yaml
-frontend:
-  env_file: ".env"
-  environment:
-    - FLASK_APP=api.py
-    - FLASK_DEBUG=1
-    - DATADOG_SERVICE_NAME=frontend
-    - DATADOG_TRACE_AGENT_HOSTNAME=agent
-    - DD_TRACE_ANALYTICS_ENABLED=true
-```{{copy}}
-
-``` yaml
-node:
-  env_file: ".env"
-  environment:
-    - DD_SERVICE_NAME=users-api
-    - DD_TRACE_AGENT_HOSTNAME=agent
-    - DD_TRACE_ANALYTICS_ENABLED=true
-```{{copy}}
-
-```yaml
-pumps:
-  env_file: ".env"
-  environment:
-    - FLASK_APP=pumps.py
-    - FLASK_DEBUG=1
-    - POSTGRES_PASSWORD=postgres
-    - POSTGRES_USER=postgres
-    - DATADOG_SERVICE_NAME=pumps-service
-    - DATADOG_TRACE_AGENT_HOSTNAME=agent
-    - DD_TRACE_ANALYTICS_ENABLED=true
-```{{copy}}
-
-```yaml
-sensors:
-  env_file: ".env"
-  environment:
-    - FLASK_APP=sensors.py
-    - FLASK_DEBUG=1
-    - POSTGRES_PASSWORD=postgres
-    - POSTGRES_USER=postgres
-    - DATADOG_SERVICE_NAME=sensors-api
-    - DATADOG_TRACE_AGENT_HOSTNAME=agent
-    - DD_TRACE_ANALYTICS_ENABLED=true
-```{{copy}}
-
-
-Afterwards restart docker services:
+To have the change take effect restart our docker services:
 
 `restart-services`{{execute interrupt}}
-
 
 Finally, open trace analytics dashboard:
 
